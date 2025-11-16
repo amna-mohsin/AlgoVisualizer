@@ -1,0 +1,27 @@
+# Qt Creator
+*.pro.user
+*.autosave
+*.user
+
+# Build folders
+build-*/
+
+# Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Dynamic libraries
+*.dll
+*.so
+*.dylib
+
+# Backup files
+*~
+
+# Mac specific
+*.DS_Store

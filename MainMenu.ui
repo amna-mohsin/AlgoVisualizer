@@ -1,0 +1,1712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainMenu</class>
+ <widget class="QWidget" name="MainMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Algorithm Visualizer</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#MainMenu {
+    background-color: #1a1a2e;
+    }</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="styleSheet">
+      <string notr="true">QStackedWidget {
+    background-color: #1a1a2e;
+    }</string>
+     </property>
+     <widget class="QWidget" name="menuPage">
+      <property name="styleSheet">
+       <string notr="true">QWidget#menuPage {
+    background-color: #1a1a2e;
+    }</string>
+      </property>
+      <layout class="QVBoxLayout" name="menuLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>30</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>30</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="titleLabel">
+         <property name="text">
+          <string>Algorithm Visualizer</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #64ffda;
+font-size: 32px;
+font-weight: bold;
+font-family: 'Segoe UI', Arial, sans-serif;
+padding: 5px;
+margin-bottom: 5px;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="subtitleLabel">
+         <property name="text">
+          <string>Interactive step-by-step visualization of Data Structures and Algorithms</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #e0e0e0;
+font-size: 13px;
+font-family: 'Segoe UI', Arial, sans-serif;
+padding: 2px;
+margin-bottom: 25px;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="cardsContainer" native="true">
+         <property name="styleSheet">
+          <string notr="true">QWidget#cardsContainer {
+    background-color: transparent;
+    }</string>
+         </property>
+         <layout class="QGridLayout" name="cardsGridLayout">
+          <property name="spacing">
+           <number>15</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="sortingCard">
+            <property name="minimumSize">
+             <size>
+              <width>260</width>
+              <height>140</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>260</width>
+              <height>140</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #16213e;
+    border: 2px solid #0f3460;
+    border-radius: 10px;
+    text-align: left;
+    padding: 0px;
+}
+
+QPushButton:hover {
+    background-color: #1e2a4a;
+    border: 2px solid #1a5fb4;
+}</string>
+            </property>
+            <layout class="QVBoxLayout" name="sortingCardLayout">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="leftMargin">
+              <number>8</number>
+             </property>
+             <property name="topMargin">
+              <number>4</number>
+             </property>
+             <property name="rightMargin">
+              <number>8</number>
+             </property>
+             <property name="bottomMargin">
+              <number>8</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="sortingIcon">
+               <property name="minimumSize">
+                <size>
+                 <width>44</width>
+                 <height>44</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>44</width>
+                 <height>44</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>📊</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font-size: 28px;
+background-color: #2196F3;
+border-radius: 6px;
+padding: 8px;
+margin-bottom: 5px;</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="sortingIconSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>12</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="sortingTitle">
+               <property name="text">
+                <string>Array Operations</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: white;
+font-size: 16px;
+font-weight: bold;
+font-family: 'Segoe UI', Arial, sans-serif;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="sortingDesc">
+               <property name="text">
+                <string>Visualize Bubble, Selection, Insertion, Merge, and Quick Sort</string>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #b0b0b0;
+font-size: 11px;
+font-family: 'Segoe UI', Arial, sans-serif;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="sortingSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>5</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="sortingLink">
+               <property name="text">
+                <string>Explore -</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #64ffda;
+font-size: 12px;
+font-weight: bold;
+font-family: 'Segoe UI', Arial, sans-serif;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="stackCard">
+            <property name="minimumSize">
+             <size>
+              <width>260</width>
+              <height>140</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>260</width>
+              <height>140</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #16213e;
+    border: 2px solid #0f3460;
+    border-radius: 10px;
+    text-align: left;
+    padding: 0px;
+}
+
+QPushButton:hover {
+    background-color: #1e2a4a;
+    border: 2px solid #1a5fb4;
+}</string>
+            </property>
+            <layout class="QVBoxLayout" name="stackCardLayout">
+             <property name="spacing">
+              <number>8</number>
+             </property>
+             <property name="leftMargin">
+              <number>8</number>
+             </property>
+             <property name="topMargin">
+              <number>8</number>
+             </property>
+             <property name="rightMargin">
+              <number>8</number>
+             </property>
+             <property name="bottomMargin">
+              <number>8</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="stackIcon">
+               <property name="minimumSize">
+                <size>
+                 <width>44</width>
+                 <height>44</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>44</width>
+                 <height>44</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>📚</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font-size: 28px;
+background-color: #9C27B0;
+border-radius: 6px;
+padding: 8px;</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="stackTitle">
+               <property name="text">
+                <string>Stack Operations</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: white;
+font-size: 16px;
+font-weight: bold;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="stackDesc">
+               <property name="text">
+                <string>Interactive Push and Pop operations</string>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #b0b0b0;
+font-size: 11px;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="stackSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>5</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="stackLink">
+               <property name="text">
+                <string>Explore -</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #64ffda;
+font-size: 12px;
+font-weight: bold;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="queueCard">
+            <property name="minimumSize">
+             <size>
+              <width>260</width>
+              <height>140</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>260</width>
+              <height>140</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #16213e;
+    border: 2px solid #0f3460;
+    border-radius: 10px;
+    text-align: left;
+    padding: 0px;
+}
+
+QPushButton:hover {
+    background-color: #1e2a4a;
+    border: 2px solid #1a5fb4;
+}</string>
+            </property>
+            <layout class="QVBoxLayout" name="queueCardLayout">
+             <property name="spacing">
+              <number>8</number>
+             </property>
+             <property name="leftMargin">
+              <number>8</number>
+             </property>
+             <property name="topMargin">
+              <number>8</number>
+             </property>
+             <property name="rightMargin">
+              <number>8</number>
+             </property>
+             <property name="bottomMargin">
+              <number>8</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="queueIcon">
+               <property name="minimumSize">
+                <size>
+                 <width>44</width>
+                 <height>44</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>44</width>
+                 <height>44</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>📋</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font-size: 28px;
+background-color: #4CAF50;
+border-radius: 6px;
+padding: 8px;</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="queueTitle">
+               <property name="text">
+                <string>Queue Operations</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: white;
+font-size: 16px;
+font-weight: bold;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="queueDesc">
+               <property name="text">
+                <string>Visualize Enqueue and Dequeue operations</string>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #b0b0b0;
+font-size: 11px;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="queueSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>5</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="queueLink">
+               <property name="text">
+                <string>Explore -</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #64ffda;
+font-size: 12px;
+font-weight: bold;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="linkedListCard">
+            <property name="minimumSize">
+             <size>
+              <width>260</width>
+              <height>140</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>260</width>
+              <height>140</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #16213e;
+    border: 2px solid #0f3460;
+    border-radius: 10px;
+    text-align: left;
+    padding: 0px;
+}
+
+QPushButton:hover {
+    background-color: #1e2a4a;
+    border: 2px solid #1a5fb4;
+}</string>
+            </property>
+            <layout class="QVBoxLayout" name="linkedListCardLayout">
+             <property name="spacing">
+              <number>8</number>
+             </property>
+             <property name="leftMargin">
+              <number>8</number>
+             </property>
+             <property name="topMargin">
+              <number>8</number>
+             </property>
+             <property name="rightMargin">
+              <number>8</number>
+             </property>
+             <property name="bottomMargin">
+              <number>8</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="linkedListIcon">
+               <property name="minimumSize">
+                <size>
+                 <width>44</width>
+                 <height>44</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>44</width>
+                 <height>44</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>🔗</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font-size: 28px;
+background-color: #FF9800;
+border-radius: 6px;
+padding: 8px;</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="linkedListTitle">
+               <property name="text">
+                <string>Linked List</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: white;
+font-size: 16px;
+font-weight: bold;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="linkedListDesc">
+               <property name="text">
+                <string>Insertion and deletion at various positions</string>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #b0b0b0;
+font-size: 11px;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="linkedListSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>5</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="linkedListLink">
+               <property name="text">
+                <string>Explore -</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #64ffda;
+font-size: 12px;
+font-weight: bold;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="treeCard">
+            <property name="minimumSize">
+             <size>
+              <width>260</width>
+              <height>140</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>260</width>
+              <height>140</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #16213e;
+    border: 2px solid #0f3460;
+    border-radius: 10px;
+    text-align: left;
+    padding: 0px;
+}
+
+QPushButton:hover {
+    background-color: #1e2a4a;
+    border: 2px solid #1a5fb4;
+}</string>
+            </property>
+            <layout class="QVBoxLayout" name="treeCardLayout">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="leftMargin">
+              <number>8</number>
+             </property>
+             <property name="topMargin">
+              <number>4</number>
+             </property>
+             <property name="rightMargin">
+              <number>8</number>
+             </property>
+             <property name="bottomMargin">
+              <number>8</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="treeIcon">
+               <property name="minimumSize">
+                <size>
+                 <width>44</width>
+                 <height>44</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>44</width>
+                 <height>44</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>🌳</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font-size: 28px;
+background-color: #00BCD4;
+border-radius: 6px;
+padding: 8px;
+margin-bottom: 5px;</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="treeIconSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>12</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="treeTitle">
+               <property name="text">
+                <string>Tree Traversals</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: white;
+font-size: 16px;
+font-weight: bold;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="treeDesc">
+               <property name="text">
+                <string>Binary Tree and BST traversals (Pre, In, Post order)</string>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #b0b0b0;
+font-size: 11px;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="treeSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>5</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="treeLink">
+               <property name="text">
+                <string>Explore -</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #64ffda;
+font-size: 12px;
+font-weight: bold;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="graphCard">
+            <property name="minimumSize">
+             <size>
+              <width>260</width>
+              <height>140</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>260</width>
+              <height>140</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #16213e;
+    border: 2px solid #0f3460;
+    border-radius: 10px;
+    text-align: left;
+    padding: 0px;
+}
+
+QPushButton:hover {
+    background-color: #1e2a4a;
+    border: 2px solid #1a5fb4;
+}</string>
+            </property>
+            <layout class="QVBoxLayout" name="graphCardLayout">
+             <property name="spacing">
+              <number>8</number>
+             </property>
+             <property name="leftMargin">
+              <number>8</number>
+             </property>
+             <property name="topMargin">
+              <number>8</number>
+             </property>
+             <property name="rightMargin">
+              <number>8</number>
+             </property>
+             <property name="bottomMargin">
+              <number>8</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="graphIcon">
+               <property name="minimumSize">
+                <size>
+                 <width>44</width>
+                 <height>44</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>44</width>
+                 <height>44</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>🕸️</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font-size: 28px;
+background-color: #9C27B0;
+border-radius: 6px;
+padding: 8px;</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="graphTitle">
+               <property name="text">
+                <string>Graph Algorithms</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: white;
+font-size: 16px;
+font-weight: bold;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="graphDesc">
+               <property name="text">
+                <string>BFS, DFS, and shortest path visualizations</string>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #b0b0b0;
+font-size: 11px;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="graphSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>5</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="graphLink">
+               <property name="text">
+                <string>Explore -</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #64ffda;
+font-size: 12px;
+font-weight: bold;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="stringCard">
+            <property name="minimumSize">
+             <size>
+              <width>260</width>
+              <height>140</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>260</width>
+              <height>140</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #16213e;
+    border: 2px solid #0f3460;
+    border-radius: 10px;
+    text-align: left;
+    padding: 0px;
+}
+
+QPushButton:hover {
+    background-color: #1e2a4a;
+    border: 2px solid #1a5fb4;
+}</string>
+            </property>
+            <layout class="QVBoxLayout" name="stringCardLayout">
+             <property name="spacing">
+              <number>8</number>
+             </property>
+             <property name="leftMargin">
+              <number>8</number>
+             </property>
+             <property name="topMargin">
+              <number>8</number>
+             </property>
+             <property name="rightMargin">
+              <number>8</number>
+             </property>
+             <property name="bottomMargin">
+              <number>8</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="stringIcon">
+               <property name="minimumSize">
+                <size>
+                 <width>44</width>
+                 <height>44</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>44</width>
+                 <height>44</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>🔤</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font-size: 28px;
+background-color: #FF5722;
+border-radius: 6px;
+padding: 8px;</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="stringTitle">
+               <property name="text">
+                <string>String Algorithms</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: white;
+font-size: 16px;
+font-weight: bold;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="stringDesc">
+               <property name="text">
+                <string>Pattern matching with Naive and KMP algorithms</string>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #b0b0b0;
+font-size: 11px;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="stringSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>5</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="stringLink">
+               <property name="text">
+                <string>Explore -</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #64ffda;
+font-size: 12px;
+font-weight: bold;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="menuBottomSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>10</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="sortingPage">
+      <property name="styleSheet">
+       <string notr="true">QWidget#sortingPage {
+    background-color: #1a1a2e;
+    }</string>
+      </property>
+      <layout class="QVBoxLayout" name="sortingPageLayout">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <property name="leftMargin">
+        <number>30</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>30</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="backButtonSorting">
+         <property name="text">
+          <string>← Back to Menu</string>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #0f3460;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+QPushButton:hover {
+    background-color: #1a5fb4;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="sortingPageTitle">
+         <property name="text">
+          <string>Array Operations</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #64ffda;
+font-size: 32px;
+font-weight: bold;
+padding: 20px 0;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="sortingContentContainer" native="true">
+         <property name="styleSheet">
+          <string notr="true">QWidget#sortingContentContainer {
+    background-color: transparent;
+}</string>
+         </property>
+         <layout class="QVBoxLayout" name="sortingContentLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="stackPage">
+      <property name="styleSheet">
+       <string notr="true">QWidget#stackPage {
+    background-color: #1a1a2e;
+    }</string>
+      </property>
+      <layout class="QVBoxLayout" name="stackPageLayout">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <property name="leftMargin">
+        <number>30</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>30</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="backButtonStack">
+         <property name="text">
+          <string>← Back to Menu</string>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #0f3460;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+QPushButton:hover {
+    background-color: #1a5fb4;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="stackPageTitle">
+         <property name="text">
+          <string>Stack Operations</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #64ffda;
+font-size: 32px;
+font-weight: bold;
+padding: 20px 0;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="stackContentContainer" native="true">
+         <property name="styleSheet">
+          <string notr="true">QWidget#stackContentContainer {
+    background-color: transparent;
+}</string>
+         </property>
+         <layout class="QVBoxLayout" name="stackContentLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="queuePage">
+      <property name="styleSheet">
+       <string notr="true">QWidget#queuePage {
+    background-color: #1a1a2e;
+    }</string>
+      </property>
+      <layout class="QVBoxLayout" name="queuePageLayout">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <property name="leftMargin">
+        <number>30</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>30</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="backButtonQueue">
+         <property name="text">
+          <string>← Back to Menu</string>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #0f3460;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+QPushButton:hover {
+    background-color: #1a5fb4;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="queuePageTitle">
+         <property name="text">
+          <string>Queue Operations</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #64ffda;
+font-size: 32px;
+font-weight: bold;
+padding: 20px 0;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="queueContentContainer" native="true">
+         <property name="styleSheet">
+          <string notr="true">QWidget#queueContentContainer {
+    background-color: transparent;
+}</string>
+         </property>
+         <layout class="QVBoxLayout" name="queueContentLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="linkedListPage">
+      <property name="styleSheet">
+       <string notr="true">QWidget#linkedListPage {
+    background-color: #1a1a2e;
+    }</string>
+      </property>
+      <layout class="QVBoxLayout" name="linkedListPageLayout">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <property name="leftMargin">
+        <number>30</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>30</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="backButtonLinkedList">
+         <property name="text">
+          <string>← Back to Menu</string>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #0f3460;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+QPushButton:hover {
+    background-color: #1a5fb4;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="linkedListPageTitle">
+         <property name="text">
+          <string>Linked List</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #64ffda;
+font-size: 32px;
+font-weight: bold;
+padding: 20px 0;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="linkedListContentContainer" native="true">
+         <property name="styleSheet">
+          <string notr="true">QWidget#linkedListContentContainer {
+    background-color: transparent;
+}</string>
+         </property>
+         <layout class="QVBoxLayout" name="linkedListContentLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="treePage">
+      <property name="styleSheet">
+       <string notr="true">QWidget#treePage {
+    background-color: #1a1a2e;
+    }</string>
+      </property>
+      <layout class="QVBoxLayout" name="treePageLayout">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <property name="leftMargin">
+        <number>30</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>30</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="backButtonTree">
+         <property name="text">
+          <string>← Back to Menu</string>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #0f3460;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+QPushButton:hover {
+    background-color: #1a5fb4;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="treePageTitle">
+         <property name="text">
+          <string>Tree Traversals</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #64ffda;
+font-size: 32px;
+font-weight: bold;
+padding: 20px 0;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="treeContentContainer" native="true">
+         <property name="styleSheet">
+          <string notr="true">QWidget#treeContentContainer {
+    background-color: transparent;
+}</string>
+         </property>
+         <layout class="QVBoxLayout" name="treeContentLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="graphPage">
+      <property name="styleSheet">
+       <string notr="true">QWidget#graphPage {
+    background-color: #1a1a2e;
+    }</string>
+      </property>
+      <layout class="QVBoxLayout" name="graphPageLayout">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <property name="leftMargin">
+        <number>30</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>30</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="backButtonGraph">
+         <property name="text">
+          <string>← Back to Menu</string>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #0f3460;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+QPushButton:hover {
+    background-color: #1a5fb4;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="graphPageTitle">
+         <property name="text">
+          <string>Graph Algorithms</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #64ffda;
+font-size: 32px;
+font-weight: bold;
+padding: 20px 0;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="graphContentContainer" native="true">
+         <property name="styleSheet">
+          <string notr="true">QWidget#graphContentContainer {
+    background-color: transparent;
+}</string>
+         </property>
+         <layout class="QVBoxLayout" name="graphContentLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="stringPage">
+      <property name="styleSheet">
+       <string notr="true">QWidget#stringPage {
+    background-color: #1a1a2e;
+    }</string>
+      </property>
+      <layout class="QVBoxLayout" name="stringPageLayout">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <property name="leftMargin">
+        <number>30</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>30</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="backButtonString">
+         <property name="text">
+          <string>← Back to Menu</string>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #0f3460;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+QPushButton:hover {
+    background-color: #1a5fb4;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="stringPageTitle">
+         <property name="text">
+          <string>String Algorithms</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #64ffda;
+font-size: 32px;
+font-weight: bold;
+padding: 20px 0;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="stringContentContainer" native="true">
+         <property name="styleSheet">
+          <string notr="true">QWidget#stringContentContainer {
+    background-color: transparent;
+}</string>
+         </property>
+         <layout class="QVBoxLayout" name="stringContentLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

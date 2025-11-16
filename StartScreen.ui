@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StartScreen</class>
+ <widget class="QWidget" name="StartScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Algorithm Visualizer</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#StartScreen {
+    background-color: #1a1a2e;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <spacer name="topSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>120</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QLabel" name="titleLabel">
+     <property name="text">
+      <string>Algorithm Visualizer</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #64ffda;
+font-size: 48px;
+font-weight: bold;
+font-family: 'Segoe UI', Arial, sans-serif;
+margin: 15px;
+padding: 10px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="subtitleLabel">
+     <property name="text">
+      <string>Learn Data Structures &amp; Algorithms Visually</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #e0e0e0;
+font-size: 16px;
+font-weight: normal;
+font-family: 'Segoe UI', Arial, sans-serif;
+margin: 10px 30px 30px 30px;
+padding: 5px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="featuresLabel">
+     <property name="text">
+      <string>✓ Array Operations  •  ✓ Stack &amp; Queue  •  ✓ Linked Lists  •  ✓ Trees  •  ✓ Graphs  •  ✓ String Matching</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #b0b0b0;
+font-size: 14px;
+font-family: 'Segoe UI', Arial, sans-serif;
+margin: 20px 50px;
+padding: 18px;
+background-color: #16213e;
+border-radius: 12px;
+border: 2px solid #0f3460;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="middleSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <spacer name="leftButtonSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="startButton">
+       <property name="text">
+        <string>Get Started</string>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>220</width>
+         <height>55</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>220</width>
+         <height>55</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #64ffda;
+    color: #1a1a2e;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border: 2px solid #64ffda;
+    border-radius: 8px;
+    padding: 12px 35px;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: #7dffe8;
+    border: 2px solid #7dffe8;
+}
+
+QPushButton:pressed {
+    background-color: #52e6c4;
+    border: 2px solid #52e6c4;
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="rightButtonSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="footerLabel">
+     <property name="text">
+      <string>Interactive learning made easy</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #808080;
+font-size: 13px;
+font-family: 'Segoe UI', Arial, sans-serif;
+margin-top: 25px;
+margin-bottom: 30px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="bottomSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>60</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
