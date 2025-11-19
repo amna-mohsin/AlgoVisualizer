@@ -6,7 +6,7 @@
 
 *Visualize algorithms step-by-step and understand data structures interactively*
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Algorithms](#-algorithms) • [Screenshots](#-screenshots) • [Contributing](#-contributing)
+[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Algorithms](#-algorithms)  • [Contributing](#-contributing)
 
 </div>
 
@@ -227,62 +227,6 @@ AlgoVisualizer/
 | KMP | O(n+m) | O(n+m) | O(n+m) | O(m) |
 
 *V = Vertices, E = Edges, n = text length, m = pattern length*
-
----
-
-## 📸 Screenshots
-
-### Main Menu
-![Main Menu](<img width="1365" height="689" alt="image" src="https://github.com/user-attachments/assets/5f6559cb-cae8-470f-809c-8877290d4536" />
-)
-*Main menu displaying all data structure cards*
-
-### Sorting - Bubble Sort
-![Bubble Sort](<img width="1365" height="689" alt="image" src="https://github.com/user-attachments/assets/af3d346c-45bc-4ee7-90fe-dfd86917d334" />
-)
-*Bubble Sort visualization showing comparison and swapping states*
-
-### Sorting - Quick Sort
-![Quick Sort](<img width="1365" height="689" alt="image" src="https://github.com/user-attachments/assets/e602041c-a370-41dc-b600-987593f56c20" />
-)
-*Quick Sort showing pivot element and partitioning*
-
-### Stack Visualization
-![Stack](<img width="1365" height="689" alt="image" src="https://github.com/user-attachments/assets/713ba814-92ce-4700-bf5f-bc8e368c964a" />
-)
-*Stack operations showing LIFO structure*
-
-### Queue Visualization
-![Queue](<img width="1365" height="689" alt="image" src="https://github.com/user-attachments/assets/1cda84c1-11ed-48e4-a948-5a4e46d2dcd0" />
-)
-*Queue showing FIFO structure with front/rear pointers*
-
-### Linked List
-![Linked List](<img width="1365" height="689" alt="image" src="https://github.com/user-attachments/assets/10739c7b-adf8-4910-9e19-8232234ccee2" />
-)
-*Doubly Linked List with node connections*
-
-### Binary Tree
-![Binary Tree](<img width="1365" height="689" alt="image" src="https://github.com/user-attachments/assets/1c0b1eda-9a0b-40f3-9256-41766bac0178" />
-)
-*Binary tree with preorder traversal*
-
-
-### Graph - Dijkstra
-![Dijkstra](<img width="1365" height="689" alt="image" src="https://github.com/user-attachments/assets/133f54b5-b9fe-4c3c-93df-42e3a5e89983" />
-)
-*Shortest path calculation using Dijkstra's algorithm*
-
-### Search
-![Linear Search](<img width="1365" height="689" alt="image" src="https://github.com/user-attachments/assets/e0b65221-1824-4d4a-8541-a9e855be1010" />
-)
-*Linear Search showing sequential element checking*
-
-
-### String Pattern Matching - KMP
-![KMP](<img width="1365" height="689" alt="image" src="https://github.com/user-attachments/assets/e3c186b5-1320-43d3-9e76-5283a9be86ab" />
-)
-*KMP algorithm visualization*
 
 ---
 
