@@ -177,7 +177,7 @@ AlgoVisualizer/
 │
 └── widgets/                    # Data structure visualizers
     ├── ArrayVisualizer.h/cpp  # Base visualization widget
-    ├── SortingVisualizer.h/cpp # 5 sorting algorithms
+    ├── searching_sortingVisualizer.h/cpp # 7 algorithms
     ├── StackVisualizer.h/cpp  # Stack (LIFO)
     ├── QueueVisualizer.h/cpp  # Queue, Circular Queue, Deque
     ├── LinkedListVisualizer.h/cpp # Singly, Doubly, Circular
